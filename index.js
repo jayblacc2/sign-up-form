@@ -1,6 +1,7 @@
 const form = document.getElementById('form'),
   password = document.querySelector('input[type="password"]'),
-  confirm_password = document.querySelector('.confirm-password');
+  confirm_password = document.querySelector('.confirm-password'),
+ 
 
 function check() {
   let message = document.querySelector('.message');
