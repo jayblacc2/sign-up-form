@@ -111,20 +111,20 @@ form h3 {
   margin-bottom: 0.5rem;
 }
 
-.form-group {
+.form-wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 1.2rem;
 }
 
-.input-group {
+.form-group {
   width: 40%;
   margin: 1rem 0;
   position: relative;
 }
 
-.input-group label {
+.form-group label {
   color: #b1b1b1;
   font-size: 0.9rem;
   display: block;
@@ -134,7 +134,7 @@ form h3 {
   transition: var(--transition);
 }
 
-.input-group input:invalid:not(:focus) + label {
+.form-group input:invalid:not(:focus) + label {
   color: #b1b1b1;
   font-size: 0.9rem;
   display: block;
@@ -143,16 +143,16 @@ form h3 {
   left: 7px;
 }
 
-.input-group input:invalid:focus + label,
-.input-group input:valid:not(:focus) + label,
-.input-group label {
+.form-group input:invalid:focus + label,
+.form-group input:valid:not(:focus) + label,
+.form-group label {
   bottom: 30px;
   left: 0;
   margin: 0.3rem 0;
   color: #161616;
 }
 
-.input-group input {
+.form-group input {
   font: inherit;
   width: 100%;
   padding: 0.1rem 0.2rem;
@@ -161,15 +161,15 @@ form h3 {
   transition: var(--transition);
 }
 
-.input-group input:focus {
+.form-group input:focus {
   outline: 1px solid var(--input-focus-color, red);
 }
 
-.input-group input[type='password']:valid {
+.form-group input[type='password']:valid {
   outline: 1px solid #0f751b;
 }
 
-.input-group input[type='password']:invalid {
+.form-group input[type='password']:invalid {
   outline: 1px solid var(--error-color);
 }
 
